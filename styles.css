@@ -243,6 +243,13 @@ header {
     max-width: 100%;
 }
 
+.about-photo img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: var(--spacing-md, 12px);
+}
+
 .about-meta {
     display: flex;
     flex-direction: column;
