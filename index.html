@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
     <div class="container">
         <header>
             <nav class="nav">
@@ -63,7 +64,7 @@
                 <h2>Experience</h2>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="timeline-year">Jun 2026 – Present</div>
+                        <div class="timeline-year">Jun 2026 – Present <span class="pulse-dot" aria-hidden="true"></span></div>
                         <div class="timeline-content">
                             <div class="job-header">
                                 <img src="budbreak_logo.png" alt="Budbreak Innovations" class="job-icon">
@@ -81,24 +82,25 @@
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-year">Oct 2025 – Present</div>
+                        <div class="timeline-year">Oct 2025 – Mar 2026 <span class="pulse-dot" aria-hidden="true"></span></div>
                         <div class="timeline-content">
                             <div class="job-header">
-                                <img src="Screenshot from 2025-12-27 17-16-39.png" alt="Company logo" class="job-icon">
+                                <img src="Screenshot from 2025-12-27 17-16-39.png" alt="Clarke AI" class="job-icon">
                                 <div>
-                                    <h3>Lead Software Engineer</h3>
-                                    <p class="institution">Coming Soon</p>
+                                    <h3>Lead AI Architecture/Software Engineer</h3>
+                                    <p class="institution">Clarke AI</p>
                                     <p class="location">New York, NY (Remote)</p>
                                 </div>
                             </div>
                             <ul class="description">
-                                <li>Led development of an autonomous agent system for processing and validating complex, multi-source data streams with intelligent conflict resolution and data fusion.</li>
-                                <li>Built production infrastructure supporting distributed orchestration, observability, and robust error handling for scalable automated decision-making.</li>
+                                <li>Engineered a multi-stage autonomous agent orchestration pipeline for high-fidelity data extraction, implementing a deterministic source-ranking algorithm and a semantic Document Vault that ensures 90% data consistency across asynchronous runs.</li>
+                                <li>Architected a custom RAG (Retrieval-Augmented Generation) engine utilizing multi-query retrieval and hybrid search to process complex documents, reducing LLM API overhead by 40% through intelligent batching and token-limit management.</li>
+                                <li>Developed production-grade observability and caching layers for agentic workflows, including caching to eliminate redundant processing and a deterministic validation gate to enforce strict schema adherence.</li>
                             </ul>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-year">Feb 2024 – Present</div>
+                        <div class="timeline-year">Feb 2024 – Present <span class="pulse-dot" aria-hidden="true"></span></div>
                         <div class="timeline-content">
                             <div class="job-header">
                                 <img src="Cornell_University_seal.svg.png" alt="Cornell University" class="job-icon">
@@ -108,6 +110,11 @@
                                     <p class="location">Ithaca, NY</p>
                                 </div>
                             </div>
+                            <ul class="description">
+                                <li>Developed and refined datasets for computer vision and action recognition, including work on <em>OpenRoboCare</em> (IROS 2025) — a multi-modal, multi-task expert demonstration dataset capturing 315 sessions and over 31k samples of occupational therapists performing 15 ADL tasks, spanning RGBD video, full-body pose, eye gaze, and tactile sensing.</li>
+                                <li>Co-organized the <em>Physical Robotic Caregiving Competition</em> (targeting ICRA 2025), drawing over 50 participants from multiple institutions, designing both the RCareWorld simulation phase and the real-robot assistive dressing/bed-bathing phase.</li>
+                                <li>Helped maintain and improve the RCareWorld simulation codebase by streamlining APIs, restructuring modules, and fixing environment stability issues so users can reliably develop and test robot policies.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="timeline-item">
