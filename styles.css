@@ -773,11 +773,10 @@ header {
 }
 
 .badge-primary {
-    background: var(--metal-d);
-    color: white;
-    border-color: transparent;
-    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
-    font-weight: var(--font-weight-bold);
+    background-color: var(--accent-subtle);
+    color: var(--accent-dark);
+    border-color: rgba(37, 99, 235, 0.18);
+    font-weight: var(--font-weight-semibold);
 }
 
 .pub-abstract {
