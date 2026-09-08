@@ -17,6 +17,7 @@
             <nav class="nav">
                 <div class="nav-links">
                     <a href="#experience">Experience</a>
+                    <a href="#publications">Publications</a>
                     <a href="#projects">Projects</a>
                 </div>
             </nav>
@@ -35,7 +36,7 @@
                         </p>
                     </div>
                     <div class="about-photo">
-                        <img src="profile.jpg" alt="Gavin Chen">
+                        <img src="IMG_5482.jpg" alt="Gavin Chen">
                     </div>
                 </div>
                 <div class="links">
@@ -76,7 +77,7 @@
                             </div>
                             <ul class="description">
                                 <li>Built a cloud data pipeline that ingests raw robot scans and, on every upload, automatically processes, GPS-tags, and runs them through trained detection models, distributing inference across on-demand GPU and CPU compute and auto-resuming failed jobs to reliably handle datasets of tens of thousands of images, cutting processing turnaround by roughly 80%.</li>
-                                <li>Developed an internal web dashboard that visualizes the live status of every dataset uploading and processing in the cloud, giving the team a single view to monitor pipeline health and catch failures early.</li>
+                                <li>Built and field-deployed scanning robots, assembling and wiring the platforms, integrating onboard NVIDIA Jetson Orin compute with a multi-camera rig, and running vineyard scans to debug and iterate on the hardware in the field.</li>
                                 <li>Contributed to the customer-facing platform that turns raw model outputs into actionable analytics, letting clients explore insights on their field data including vine inventory, disease detection, and mapping.</li>
                             </ul>
                         </div>
@@ -85,18 +86,30 @@
                         <div class="timeline-year">Oct 2025 – Mar 2026 <span class="pulse-dot" aria-hidden="true"></span></div>
                         <div class="timeline-content">
                             <div class="job-header">
-                                <img src="Screenshot from 2025-12-27 17-16-39.png" alt="Clarke AI" class="job-icon">
+                                <img src="Screenshot from 2025-12-27 17-16-39.png" alt="Clarke" class="job-icon">
                                 <div>
-                                    <h3>Lead AI Architecture/Software Engineer</h3>
-                                    <p class="institution">Clarke AI</p>
+                                    <h3>AI Architecture/Software Engineer</h3>
+                                    <p class="institution">Clarke</p>
                                     <p class="location">New York, NY (Remote)</p>
                                 </div>
                             </div>
                             <ul class="description">
-                                <li>Engineered a multi-stage autonomous agent orchestration pipeline for high-fidelity data extraction, implementing a deterministic source-ranking algorithm and a semantic Document Vault that ensures 90% data consistency across asynchronous runs.</li>
-                                <li>Architected a custom RAG (Retrieval-Augmented Generation) engine utilizing multi-query retrieval and hybrid search to process complex documents, reducing LLM API overhead by 40% through intelligent batching and token-limit management.</li>
-                                <li>Developed production-grade observability and caching layers for agentic workflows, including caching to eliminate redundant processing and a deterministic validation gate to enforce strict schema adherence.</li>
+                                <li>Engineered a multi-stage autonomous agent orchestration pipeline for high-fidelity extraction from utility filings, regulatory dockets, and operator disclosures, implementing a deterministic source-ranking algorithm and a semantic Document Vault that ensures 90% data consistency across asynchronous runs.</li>
+                                <li>Architected a custom RAG (Retrieval-Augmented Generation) engine utilizing multi-query retrieval and hybrid search to process complex compute-infrastructure filings, reducing LLM API overhead by 40% through intelligent batching and token-limit management.</li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">Fall 2026 <span class="pulse-dot" aria-hidden="true"></span></div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <img src="Cornell_University_seal.svg.png" alt="Cornell University" class="job-icon">
+                                <div>
+                                    <h3>Teaching Assistant — CS 4750: Foundations of Robotics</h3>
+                                    <p class="institution">Cornell University</p>
+                                    <p class="location">Ithaca, NY</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -111,9 +124,9 @@
                                 </div>
                             </div>
                             <ul class="description">
-                                <li>Developed and refined datasets for computer vision and action recognition, including work on <em>OpenRoboCare</em> (IROS 2025) — a multi-modal, multi-task expert demonstration dataset capturing 315 sessions and over 31k samples of occupational therapists performing 15 ADL tasks, spanning RGBD video, full-body pose, eye gaze, and tactile sensing.</li>
-                                <li>Co-organized the <em>Physical Robotic Caregiving Competition</em> (targeting ICRA 2025), drawing over 50 participants from multiple institutions, designing both the RCareWorld simulation phase and the real-robot assistive dressing/bed-bathing phase.</li>
-                                <li>Helped maintain and improve the RCareWorld simulation codebase by streamlining APIs, restructuring modules, and fixing environment stability issues so users can reliably develop and test robot policies.</li>
+                                <li>Developed and refined datasets for computer vision and action recognition, including work on <em>OpenRoboCare</em> (IROS 2025) — a multi-modal, multi-task expert demonstration dataset capturing 315 sessions and over 31k samples of occupational therapists performing 15 ADL tasks. Data spanned RGBD video, full-body pose, eye gaze, tactile sensing, and detailed action annotations, enabling diverse benchmarks for perception and activity recognition models.</li>
+                                <li>Co-organized the <em>Physical Robotic Caregiving Competition</em>, which drew over 50 participants from multiple institutions. Designed both the simulation phase in RCareWorld and the real-robot phase, creating long-horizon assistive dressing and bed-bathing tasks that require complex manipulation, perception, and safe human-robot interaction.</li>
+                                <li>Helped maintain and improve the RCareWorld simulation codebase by streamlining APIs, restructuring modules, improving documentation, and fixing environment stability issues so users can reliably develop and test robot policies.</li>
                             </ul>
                         </div>
                     </div>
@@ -133,22 +146,40 @@
                 </div>
             </section>
 
+            <section id="publications" class="section">
+                <h2>Publications</h2>
+                <div class="publications">
+                    <div class="publication">
+                        <div class="pub-header">
+                            <h3><a href="https://www.roboticsproceedings.org/rss22/p011.pdf" target="_blank">RAG-Diff: Adapting Diffusion Policies to Dynamic Constraints with Retrieval-Augmented Guidance</a></h3>
+                            <div class="pub-badges">
+                                <span class="badge badge-primary">RSS 2026</span>
+                            </div>
+                        </div>
+                        <p class="pub-abstract">Ruolin Ye, Nayoung Ha, Shuaixing Chen, Qiandao Liu, <strong>Gavin Chen</strong>, Shaoyang Stassen, Mark Zolotas, Jose Barreiros, Tapomayukh Bhattacharjee. <em>Robotics: Science and Systems (RSS), 2026.</em></p>
+                        <div class="pub-links">
+                            <a href="https://www.roboticsproceedings.org/rss22/p011.pdf" target="_blank" class="link-btn" data-type="paper">Paper</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section id="projects" class="section">
                 <h2>Projects</h2>
                 <div class="publications">
                     <div class="publication">
                         <div class="pub-header">
-                            <h3>CARE: A Collaborative Autonomous Robot–Assistive Device System for Everyday Transfers</h3>
+                            <h3>Robotic Assistive System for Human Transfer</h3>
                             <div class="pub-badges">
-                                <span class="badge badge-primary">2025</span>
+                                <span class="badge badge-primary">Summer 2025</span>
                                 <span class="badge">Hardware</span>
                             </div>
                         </div>
                         <div class="pub-image">
-                            <img src="figma.png" alt="CARE: A Collaborative Autonomous Robot–Assistive Device System">
+                            <img src="figma.png" alt="Robotic Assistive System for Human Transfer">
                         </div>
                         <p class="pub-abstract">
-                            Engineered a fully autonomous assistive robotics system integrating vision-based perception, diffusion-policy grasp planning, and multi-device coordination (Hoyer lift, wheelchair, hospital bed). Upgraded hardware with Arduino/Raspberry Pi control, custom end-effectors, and safety interlocks, achieving 97% success rate for autonomous wheelchair movement. Preparing <em>IROS 2026</em> submission.
+                            Architected a fully autonomous patient transfer system integrating proxy-perception and diffusion-policy grasp planning to localize and manipulate non-rigid sling hardware with sub-centimeter precision. Designed custom embedded control loops (Arduino/RPi) for retrofitted medical hardware, implementing hardware-level safety overrides and achieving a 97% autonomous success rate (up from 55%).
                         </p>
                         <div class="pub-pdf">
                             <object data="ELI_Summer_2025_Report.pdf" type="application/pdf" width="100%" height="600px">
@@ -172,11 +203,11 @@
                         <div class="pub-header">
                             <h3>Fast Goal-Conditioned Diffusion Policy (FGDP)</h3>
                             <div class="pub-badges">
-                                <span class="badge badge-primary">2025</span>
+                                <span class="badge badge-primary">May 2025 – Present</span>
                             </div>
                         </div>
                         <p class="pub-abstract">
-                            Developed a goal-conditioned manipulation policy with rectified-flow formulation enabling real-time inference (K=1) while maintaining accuracy at higher K-steps. Built comprehensive training and evaluation tooling with action-chunk metrics and reproducible configs across low-dim and image modalities, demonstrating controllable latency–quality tradeoffs for deployment.
+                            Formulated a rectified-flow diffusion policy for robotic manipulation that decouples inference latency from generation quality, introducing a tunable K-step knob to optimize the real-time accuracy–latency frontier. Outperformed baseline diffusion models in low-latency regimes (K=1) by enforcing trajectory smoothness during training, validating superior action-chunk consistency across high-dimensional control tasks.
                         </p>
                         <div class="pub-pdf">
                             <object data="Project_Title.pdf" type="application/pdf" width="100%" height="600px">
@@ -197,25 +228,24 @@
                     </div>
                     <div class="publication">
                         <div class="pub-header">
-                            <h3>HemiSec — Palm Vein Biometric Capture</h3>
+                            <h3>HemiSec (NIR Biometric Authentication)</h3>
                             <div class="pub-badges">
-                                <span class="badge badge-primary">2026</span>
+                                <span class="badge badge-primary">Jan 2026</span>
                                 <span class="badge">Hardware</span>
                             </div>
                         </div>
                         <div class="pub-image">
-                            <img src="hemisec.png" alt="HemiSec — Palm Vein Biometric Capture">
+                            <img src="hemisec_cover.jpeg" alt="HemiSec (NIR Biometric Authentication)">
                         </div>
                         <p class="pub-abstract">
-                            Built a hardware + software prototype for palm-vein biometric capture using near-IR imaging on a Raspberry Pi. Designed and 3D-printed custom housing for electronics, integrated Arducam NOIR camera module with external IR illumination panel (850nm), and developed a complete feature extraction pipeline including hand segmentation, illumination correction, and Gabor filter-bank response for vein pattern recognition. Implemented Flask API for image capture and feature vector extraction, enabling downstream biometric matching with cosine similarity.
+                            Designed a hardware-software NIR imaging pipeline for palm-vein biometrics, implementing a CV stack including Otsu-based segmentation, distance-transform "safe masks," robust illumination correction, and a Gabor filter-bank feature descriptor with spatial grid pooling for lighting-invariant matching.
                         </p>
                         <div class="pub-meta">
                             <div class="pub-tags">
                                 <span class="tag">Python</span>
                                 <span class="tag">OpenCV</span>
                                 <span class="tag">Flask</span>
-                                <span class="tag">Raspberry Pi</span>
-                                <span class="tag">Computer Vision</span>
+                                <span class="tag">Swift</span>
                             </div>
                             <div class="pub-links">
                                 <a href="https://github.com/gc9616/hemisec" target="_blank" class="link-btn" data-type="code">Code</a>

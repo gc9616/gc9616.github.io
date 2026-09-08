@@ -16,10 +16,10 @@
     --border-color: #dde3ed;
     --border-subtle: #eef1f6;
 
-    /* Metallic accent gradients - brushed steel with a blue anodized sheen */
-    --metal-d: linear-gradient(135deg, #3a4658 0%, #2563eb 35%, #9dc2fb 55%, #2563eb 75%, #3a4658 100%);
-    --metal-v: linear-gradient(180deg, #3a4658 0%, #2563eb 35%, #9dc2fb 55%, #2563eb 75%, #3a4658 100%);
-    --metal-h: linear-gradient(90deg, #3a4658 0%, #2563eb 35%, #9dc2fb 55%, #2563eb 75%, #3a4658 100%);
+    /* Accent bars/markers - solid, clean */
+    --metal-d: #2563eb;
+    --metal-v: #2563eb;
+    --metal-h: #2563eb;
 
     /* Tech accent color options - uncomment one:
     
@@ -308,8 +308,7 @@ header {
 .about-photo img {
     display: block;
     width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
+    height: auto;
     border-radius: var(--spacing-md, 12px);
 }
 
@@ -708,6 +707,25 @@ header {
     border-bottom: none;
 }
 
+#publications .publication {
+    margin: 0;
+    padding: var(--spacing-2xl) var(--spacing-xl);
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+#publications .publication:hover {
+    border-color: rgba(37, 99, 235, 0.28);
+    box-shadow: var(--shadow-lg);
+}
+
+#publications .publication::before {
+    display: none;
+}
+
 .pub-header {
     display: flex;
     justify-content: space-between;
@@ -723,6 +741,21 @@ header {
     letter-spacing: -0.02em;
     line-height: 1.4;
     flex: 1;
+}
+
+.pub-header h3 a {
+    color: inherit;
+    text-decoration: none;
+    background-image: linear-gradient(var(--accent), var(--accent));
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size var(--transition-base), color var(--transition-base);
+}
+
+.pub-header h3 a:hover {
+    color: var(--accent);
+    background-size: 100% 1px;
 }
 
 .pub-image {
