@@ -177,7 +177,7 @@ body::after {
 
 /* Navigation */
 header {
-    padding: 3rem 0 1.5rem;
+    padding: 1.75rem 0;
     border-bottom: 1px solid var(--border-subtle);
     margin-bottom: 4rem;
     position: sticky;
@@ -204,13 +204,13 @@ header {
 .nav-links a {
     color: var(--text-color-light);
     text-decoration: none;
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     font-weight: var(--font-weight-medium);
     letter-spacing: 0.08em;
     transition: all var(--transition-base);
     position: relative;
     text-transform: uppercase;
-    padding: 0.5rem 0;
+    padding: 0.75rem 0;
 }
 
 .nav-links a:hover {
@@ -695,7 +695,7 @@ header {
 .publication::before {
     content: '';
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 0%;
     height: 2px;
