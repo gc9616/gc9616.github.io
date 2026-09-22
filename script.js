@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Highlight active navigation item on scroll
     const sections = document.querySelectorAll('.section');
-    const navLinks = document.querySelectorAll('.nav-links a');
+    const navLinks = document.querySelectorAll('.nav-links a:not(.nav-home)');
 
     function highlightNav() {
         let current = '';

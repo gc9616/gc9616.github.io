@@ -12,17 +12,19 @@
 </head>
 <body>
     <div class="scroll-progress" id="scrollProgress"></div>
-    <div class="container">
-        <header>
+    <header>
+        <div class="container">
             <nav class="nav">
                 <div class="nav-links">
-                    <a href="#experience">Experience</a>
+                    <a href="index.html" class="nav-home active">Home</a>
                     <a href="#publications">Publications</a>
+                    <a href="#experience">Experience</a>
                     <a href="projects.html">Projects</a>
                 </div>
             </nav>
-        </header>
-
+        </div>
+    </header>
+    <div class="container">
         <main>
             <section id="about" class="section">
                 <div class="about-grid">
@@ -58,6 +60,24 @@
                             <circle cx="4" cy="4" r="2"></circle>
                         </svg>
                     </a>
+                </div>
+            </section>
+
+            <section id="publications" class="section">
+                <h2>Publications</h2>
+                <div class="publications">
+                    <div class="publication">
+                        <div class="pub-header">
+                            <h3><a href="https://www.roboticsproceedings.org/rss22/p011.pdf" target="_blank">RAG-Diff: Adapting Diffusion Policies to Dynamic Constraints with Retrieval-Augmented Guidance</a></h3>
+                            <div class="pub-badges">
+                                <span class="badge badge-primary">RSS 2026</span>
+                            </div>
+                        </div>
+                        <p class="pub-abstract">Ruolin Ye, Nayoung Ha, Shuaixing Chen, Qiandao Liu, <strong>Gavin Chen</strong>, Shaoyang Stassen, Mark Zolotas, Jose Barreiros, Tapomayukh Bhattacharjee. <em>Robotics: Science and Systems (RSS), 2026.</em></p>
+                        <div class="pub-links">
+                            <a href="https://www.roboticsproceedings.org/rss22/p011.pdf" target="_blank" class="link-btn" data-type="paper">Paper</a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -145,25 +165,6 @@
                     </div>
                 </div>
             </section>
-
-            <section id="publications" class="section">
-                <h2>Publications</h2>
-                <div class="publications">
-                    <div class="publication">
-                        <div class="pub-header">
-                            <h3><a href="https://www.roboticsproceedings.org/rss22/p011.pdf" target="_blank">RAG-Diff: Adapting Diffusion Policies to Dynamic Constraints with Retrieval-Augmented Guidance</a></h3>
-                            <div class="pub-badges">
-                                <span class="badge badge-primary">RSS 2026</span>
-                            </div>
-                        </div>
-                        <p class="pub-abstract">Ruolin Ye, Nayoung Ha, Shuaixing Chen, Qiandao Liu, <strong>Gavin Chen</strong>, Shaoyang Stassen, Mark Zolotas, Jose Barreiros, Tapomayukh Bhattacharjee. <em>Robotics: Science and Systems (RSS), 2026.</em></p>
-                        <div class="pub-links">
-                            <a href="https://www.roboticsproceedings.org/rss22/p011.pdf" target="_blank" class="link-btn" data-type="paper">Paper</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
         </main>
 
         <footer>

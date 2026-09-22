@@ -177,16 +177,20 @@ body::after {
 
 /* Navigation */
 header {
-    padding: 1.75rem 0;
-    border-bottom: 1px solid var(--border-subtle);
-    margin-bottom: 4rem;
     position: sticky;
     top: 0;
+    z-index: 100;
+    margin-bottom: 4rem;
     background-color: rgba(var(--bg-color-rgb), 0.8);
     backdrop-filter: blur(12px) saturate(180%);
     -webkit-backdrop-filter: blur(12px) saturate(180%);
-    z-index: 100;
     transition: all var(--transition-base);
+}
+
+header .container {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid var(--border-subtle);
 }
 
 .nav {
@@ -1056,8 +1060,12 @@ footer {
     }
 
     header {
-        padding: 2rem 0 1.25rem;
         margin-bottom: 3rem;
+    }
+
+    header .container {
+        padding-top: 2rem;
+        padding-bottom: 1.25rem;
     }
 
     .nav-links {
