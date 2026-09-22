@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects — Gavin Chen">
+    <title>Projects — Gavin Chen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="container">
+        <header>
+            <nav class="nav">
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#experience">Experience</a>
+                    <a href="index.html#publications">Publications</a>
+                    <a href="projects.html" class="active">Projects</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                <div class="publications">
+                    <div class="publication">
+                        <div class="pub-header">
+                            <h3>Untitled Game Project</h3>
+                            <div class="pub-badges">
+                                <span class="badge badge-primary">In Development <span class="pulse-dot" aria-hidden="true"></span></span>
+                            </div>
+                        </div>
+                        <div class="coming-soon-visual">
+                            <div class="coming-soon-grid"></div>
+                            <div class="coming-soon-content">
+                                <svg class="coming-soon-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="6" y1="12" x2="10" y2="12"></line>
+                                    <line x1="8" y1="10" x2="8" y2="14"></line>
+                                    <line x1="15" y1="13" x2="15.01" y2="13"></line>
+                                    <line x1="18" y1="11" x2="18.01" y2="11"></line>
+                                    <rect x="2" y="6" width="20" height="12" rx="6"></rect>
+                                </svg>
+                                <span class="coming-soon-text">Coming Soon</span>
+                                <div class="coming-soon-progress"><div class="coming-soon-progress-bar"></div></div>
+                            </div>
+                        </div>
+                        <p class="pub-abstract">
+                            A small game I'm building solo, just for fun, as a gift for a friend. Still early and under wraps — a proper look (and name) is coming once there's something worth showing.
+                        </p>
+                    </div>
+                    <div class="publication">
+                        <div class="pub-header">
+                            <h3>Robotic Assistive System for Human Transfer</h3>
+                            <div class="pub-badges">
+                                <span class="badge badge-primary">Summer 2025</span>
+                                <span class="badge">Hardware</span>
+                            </div>
+                        </div>
+                        <div class="pub-image">
+                            <img src="figma.png" alt="Robotic Assistive System for Human Transfer">
+                        </div>
+                        <p class="pub-abstract">
+                            Architected a fully autonomous patient transfer system integrating proxy-perception and diffusion-policy grasp planning to localize and manipulate non-rigid sling hardware with sub-centimeter precision. Designed custom embedded control loops (Arduino/RPi) for retrofitted medical hardware, implementing hardware-level safety overrides and achieving a 97% autonomous success rate (up from 55%).
+                        </p>
+                        <div class="pub-pdf">
+                            <object data="ELI_Summer_2025_Report.pdf" type="application/pdf" width="100%" height="600px">
+                                <p>Unable to display PDF. <a href="ELI_Summer_2025_Report.pdf" target="_blank">Download instead</a></p>
+                            </object>
+                        </div>
+                        <div class="pub-meta">
+                            <div class="pub-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">C++</span>
+                                <span class="tag">CMake</span>
+                                <span class="tag">ROS</span>
+                            </div>
+                            <div class="pub-links">
+                                <a href="https://github.com/empriselab/chariot_ros" target="_blank" class="link-btn" data-type="code">Code</a>
+                                <span class="link-note">(EmPRISE login required)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publication">
+                        <div class="pub-header">
+                            <h3>Fast Goal-Conditioned Diffusion Policy (FGDP)</h3>
+                            <div class="pub-badges">
+                                <span class="badge badge-primary">May 2025 – Present</span>
+                            </div>
+                        </div>
+                        <p class="pub-abstract">
+                            Formulated a rectified-flow diffusion policy for robotic manipulation that decouples inference latency from generation quality, introducing a tunable K-step knob to optimize the real-time accuracy–latency frontier. Outperformed baseline diffusion models in low-latency regimes (K=1) by enforcing trajectory smoothness during training, validating superior action-chunk consistency across high-dimensional control tasks.
+                        </p>
+                        <div class="pub-pdf">
+                            <object data="Project_Title.pdf" type="application/pdf" width="100%" height="600px">
+                                <p>Unable to display PDF. <a href="Project_Title.pdf" target="_blank">Download instead</a></p>
+                            </object>
+                        </div>
+                        <div class="pub-meta">
+                            <div class="pub-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">PyTorch</span>
+                                <span class="tag">Robotics</span>
+                            </div>
+                            <div class="pub-links">
+                                <a href="https://github.coecis.cornell.edu/gc487/fast_gcdp/tree/main" target="_blank" class="link-btn" data-type="code">Code</a>
+                                <span class="link-note">(Cornell login required)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publication">
+                        <div class="pub-header">
+                            <h3>HemiSec (NIR Biometric Authentication)</h3>
+                            <div class="pub-badges">
+                                <span class="badge badge-primary">Jan 2026</span>
+                                <span class="badge">Hardware</span>
+                            </div>
+                        </div>
+                        <div class="pub-image">
+                            <img src="hemisec_cover.jpeg" alt="HemiSec (NIR Biometric Authentication)">
+                        </div>
+                        <p class="pub-abstract">
+                            Designed a hardware-software NIR imaging pipeline for palm-vein biometrics, implementing a CV stack including Otsu-based segmentation, distance-transform "safe masks," robust illumination correction, and a Gabor filter-bank feature descriptor with spatial grid pooling for lighting-invariant matching.
+                        </p>
+                        <div class="pub-meta">
+                            <div class="pub-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">OpenCV</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">Swift</span>
+                            </div>
+                            <div class="pub-links">
+                                <a href="https://github.com/gc9616/hemisec" target="_blank" class="link-btn" data-type="code">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -781,6 +781,91 @@ header {
     display: block;
 }
 
+/* Coming soon placeholder (project in development, no imagery yet) */
+.coming-soon-visual {
+    position: relative;
+    margin: var(--spacing-md) 0;
+    padding: var(--spacing-3xl) var(--spacing-lg);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px dashed var(--border-color);
+    background: linear-gradient(160deg, var(--bg-subtle), var(--bg-elevated));
+}
+
+.coming-soon-grid {
+    position: absolute;
+    inset: -20%;
+    background-image:
+        repeating-linear-gradient(0deg, rgba(var(--accent-rgb), 0.09) 0px, rgba(var(--accent-rgb), 0.09) 1px, transparent 1px, transparent 34px),
+        repeating-linear-gradient(90deg, rgba(var(--accent-rgb), 0.09) 0px, rgba(var(--accent-rgb), 0.09) 1px, transparent 1px, transparent 34px);
+    animation: coming-soon-pan 9s linear infinite;
+}
+
+@keyframes coming-soon-pan {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(34px, 34px); }
+}
+
+.coming-soon-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    text-align: center;
+}
+
+.coming-soon-icon {
+    color: var(--accent);
+    opacity: 0.85;
+    animation: coming-soon-float 3s ease-in-out infinite;
+}
+
+@keyframes coming-soon-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+.coming-soon-text {
+    font-size: 1.0625rem;
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.coming-soon-progress {
+    width: 140px;
+    height: 4px;
+    margin-top: var(--spacing-xs);
+    border-radius: 3px;
+    background-color: var(--border-subtle);
+    overflow: hidden;
+}
+
+.coming-soon-progress-bar {
+    width: 40%;
+    height: 100%;
+    border-radius: 3px;
+    background: var(--metal-h);
+    box-shadow: 0 0 8px rgba(var(--accent-rgb), 0.5);
+    animation: coming-soon-load 1.8s ease-in-out infinite;
+}
+
+@keyframes coming-soon-load {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(350%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .coming-soon-grid,
+    .coming-soon-icon,
+    .coming-soon-progress-bar {
+        animation: none;
+    }
+}
+
 .pub-pdf {
     margin: var(--spacing-lg) 0;
     width: 100%;
